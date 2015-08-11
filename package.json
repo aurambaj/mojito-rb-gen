@@ -1,0 +1,39 @@
+{
+    "name": "mojito-rb-gen",
+    "version": "0.0.1",
+    "description": "Localization utility that converts .properties files into JS/JSON resource bundles",
+    "main": "mojito-rb-gen.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "generate-examples": "node bin/mojito-rb-gen.js -s examples/src/ -o examples/out/json/ ; node bin/mojito-rb-gen.js -s examples/src/ -o examples/out/js/default -t js ; bin/mojito-rb-gen.js -s examples/src/ -o examples/out/js/var/ -t js --js-variable MY_MESSAGES ;  node bin/mojito-rb-gen.js -s examples/src/ -o examples/out/js/namespaces/ -t js --js-variable MY_MESSAGES_NS -n"
+    },
+    "keywords": [
+        "mojito",
+        "l10n",
+        "i18n",
+        "properties",
+        "json",
+        "js",
+        "merge",
+        "localization",
+        "internationlization",
+        "resource",
+        "bundle"
+    ],
+    "author": "Jean Aurambault <jean.aurambault@wanadoo.fr>",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aurambaj/mojito-rb-gen"
+    },
+    "bin": {
+        "mojito-rb-gen": "bin/mojito-rb-gen.js"
+    },
+    "dependencies": {
+        "cli": "^0.9.0",
+        "lodash": "^3.10.1",
+        "merge": "^1.2.0",
+        "mkdirp": "^0.5.1",
+        "properties": "^1.2.1"
+    }
+}

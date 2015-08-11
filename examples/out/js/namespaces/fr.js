@@ -1,0 +1,1 @@
+MY_MESSAGES_NS = {"group1":{"key1":"Group 1 Key 1","key2":"Group 1 Key 2 (fr)"},"group2":{"key1":"Group 2 Key 1"},"outdated":"Outdated"};
